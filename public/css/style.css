@@ -183,3 +183,97 @@ body{
     font-size: 1.1rem;
   }
 }
+
+/* ── 1. Navbar Responsive Styling ── */
+@media (max-width: 767.98px) { /* Bootstrap mobile breakpoint */ 
+  .navbar .d-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-inp {
+    width: 100% !important;
+    margin-bottom: 0.5rem;
+  }
+  .search-btn {
+    width: 100%;
+  }
+}
+
+/* ── 2. Footer Responsive Styling ── */
+footer .f-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+footer .f-info-socials,
+footer .f-info-links,
+footer .f-pvt {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  footer .f-info-socials,
+  footer .f-info-links,
+  footer .f-pvt {
+    width: auto;
+    margin-bottom: 0;
+  }
+  footer .f-info-links {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* ── 3. Show Page Responsiveness ── */
+/* Container */
+.show-card {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Title & buttons layout */
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+  margin: 1rem 0;
+}
+@media (min-width: 576px) {
+  .btns {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+/* Reviews grid */
+.listing-reviews .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.listing-reviews .card {
+  flex: 1 1 100%;
+  margin: 0.5rem 0;
+}
+@media (min-width: 768px) {
+  .listing-reviews .card {
+    flex: 1 1 45%;
+    margin: 0.5rem;
+  }
+}
+
+/* General text/padding adjustment */
+@media (max-width: 767.98px) {
+  .show-card .card-body p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .show-card {
+    max-width: 600px;
+  }
+}
