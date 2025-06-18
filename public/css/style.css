@@ -1,0 +1,169 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: #fff;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+    font-size: 1.05rem !important;
+}
+.nav-link:hover{
+    font-weight: 700;
+}
+.fa-compass:hover{
+    font-size: 2.15rem;
+}
+
+/* Footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+    margin: 0 8px;
+    margin-top: 0.5rem;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+.f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-links , .f-info-socials , .f-pvt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    opacity: 0.8;
+    margin-right: 0.7rem;
+    font-size: 1.45rem;
+    margin-top: 0.5rem;
+}
+.f-info-socials i:hover{
+    opacity: 1 !important;
+    font-size: 1.55rem;
+}
+.f-info-socials a{
+    text-decoration: none;
+    color: #222222;
+}
+.dotfoot{
+    margin-top: 0.9rem !important;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.f-pvt{
+    margin-top: 1.1rem;
+}
+
+/* Cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card body {
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none !important;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* Edit page */
+.edit-btn{
+    background-color: #fe324d !important;
+    border: none !important;
+    font-weight: 400 !important;
+}
+.edit-btn:hover{
+    font-weight: 700 !important;
+}
+
+/* Add page */
+.add-btn{
+    background-color: #fe324d !important;
+    border: none;
+    font-weight: 400 !important;
+}
+.add-btn:hover{
+    font-weight: 700 !important;
+}
+
+/* show page */
+.show-img{
+    height: 35vh;
+}
+.card-text{
+    margin-left: -1rem !important;
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* review */
+.card-title {
+    margin-left: -1rem;
+}
+.fixit{
+    margin-left: -1rem;
+}
+
+/* search-bar */
+.price-edit{
+    margin-top: -0.15rem !important;
+    font-size: 0.95rem;
+}
+.listing-link-search{
+    text-decoration: none;
+    color: #222222;
+}
+.search-main{
+    margin-bottom: 1rem;
+}
+.card-img-top-search{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    margin-bottom: 0.35rem !important;
+}

@@ -1,0 +1,26 @@
+<% layout("/layouts/boilerplate") -%>
+
+<style>
+    .headsearch{
+        margin-top: 0.5rem !important;
+        margin-bottom: 1rem;
+    }
+</style>
+
+<h3 class="headsearch">Listings in <%= country %></h3>
+
+<div class="listings row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-2">
+  <% listings.forEach(listing => { %>
+    <div class="listing search-main">
+      <a href="/listings/<%= listing._id %>" class="listing-link-search">
+        <img src="<%= listing.image.url %>" class="card-img-top-search" alt="listing_image" style="height: 18rem;">
+        <b><%= listing.title %></b>
+        <div class="price-edit">&#8377; <%= listing.price.toLocaleString("en-IN") %> /night</div>
+      </a>
+    </div>
+  <% }) %>
+  <!-- if no country present in here -->
+  <% if (listings.length === 0) { %>
+  <p><b>No listings found for “<%= country %>.” Try another destination!</b></p>
+  <% } %>
+</div>
