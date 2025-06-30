@@ -43,8 +43,9 @@ module.exports.createListing = async (req , res , next) => {
     newListing.owner = req.user._id;
     newListing.image = {url , filename};
     await newListing.save();
-    req.flash("success" , "New Listing Created!");  //this msg will be displayed only once. after refresh its gone...
+  //this msg will be displayed only once. after refresh its gone...
     res.redirect("/listings");
+    // req.flash("success" , "New Listing Created!");
 };
 
 //Edit route
