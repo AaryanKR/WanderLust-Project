@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Wanderlust 🌍 – An Airbnb-Style Web App
 
 Wanderlust is a full-stack travel accommodations platform inspired by Airbnb, built with modern technologies to showcase your ability in frontend, backend, database design, and deployment.
@@ -81,3 +82,6 @@ Layout & UX
     Includes practical features like search functionality and secure image uploads.
 
     Structured with maintainability and readability in mind.
+=======
+# WanderLust-project
+>>>>>>> 4f448cd135e44b649a7965f5ac49b50c5694b0f9
